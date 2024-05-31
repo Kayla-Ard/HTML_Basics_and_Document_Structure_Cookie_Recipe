@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+    <h1>Fill out this form to submit your recipe!</h1>
+    </header>
+    <form onSubmit="handlesubmit">
+        <label for="name">Recipe Name:</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter recipe name"
+            autocomplete="on"
+            required> 
+
+        <label for="ingredients">Ingredients:</label>
+        <textarea 
+            id="ingredients" 
+            name="ingredients" 
+            rows="6" 
+            cols="15">
+Enter ingredients
+        </textarea>    
+
+        <label for="instructions">Instructions:</label>
+        <textarea 
+            id="instructions" 
+            name="instructions" 
+            rows="6" 
+            cols="15">
+Enter instructions
+        </textarea>
+            <div role="alert" aria-live="assertive"></div>    
+        
+            <button>Submit</button>
+            <br>
+        </form>    
+            
+        <h4 class="closer">Don't forget to enjoy your Classic Chocolate Chip Cookies with a tall glass of milk for the perfect combination!</h4>
+        <br>    
+        <footer>
+                <p> &copy; 2024 Classic Chocolate Chip Cookies. All rights reserved.</p>
+            </footer>
+    </body>
+</html>

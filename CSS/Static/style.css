@@ -1,0 +1,177 @@
+/* Lesson 1: Assignments | CSS Fundamentals */
+
+/* making sure my background phot covers whole page and doesn't repeat */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white ;
+    background-size: cover;
+    background-image: url("https://www.foodandwine.com/thmb/4_UScMzHQCxZzACBITHHmT_EM3U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Chocolate-Chunk-Halwah-Cookies-FT-RECIPE0923-1f8df755df6d468da98887aa846a2fe3.jpg");
+    background-repeat: no-repeat;
+}
+
+main {
+    position: relative;
+}
+
+h3 {
+    color:#f4b794ea;
+    font-size: 22px;
+}
+
+h1 {
+    color:#f4b794ea;
+    font-size: 40px;
+}
+
+header {
+    margin: 0 auto 20px;
+    width: 675px;
+    padding: 20px;
+    background-color: rgba(38, 36, 36, 0.721);  
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px grey;
+    display:flex;
+    flex-direction:column;
+    color: white;
+    text-align: center;
+}
+
+/* making sure the footer text stays at the bottom of the page */
+footer {
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+section {
+    margin: 0 auto 20px;
+    width: 375px;
+    padding: 20px;
+    background-color: rgba(38, 36, 36, 0.721);  
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px grey;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: left;
+}
+
+a:hover {
+    color:  #f4b794ea;
+    transform: translateY(-5px)
+}
+
+a {
+    color:white;
+    text-align: center;
+    justify-content:flex-end; 
+    font-style: oblique
+}
+
+.closer {
+    color: #f4b794ea;
+    text-align: center;
+    background-color: black;
+    border-radius: 20px;
+    font-size: 18px;
+    font-style: italic;
+    border-color: white;
+    border-style: solid;
+    height: 50px;
+}
+
+/* adding animation to the closer section with a slide in effect */
+.closer {
+    animation-duration: 6s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* adding animation to the closer section */
+@keyframes slidein {
+from {
+    margin-left: 100%;
+    width: 300%;
+}
+
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+
+#recipe_form {
+    margin: 0 auto 20px;
+    width: 375px;
+    padding: 20px;
+    background-color: rgba(38, 36, 36, 0.721);  
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px grey;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+button {
+    color:black;
+    background-color: #f4b794ea;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: oblique;
+    justify-items:flex-end;
+    cursor:pointer;
+}
+
+/* makes the button move upon hover while changing text to white */
+button:hover {
+    transform: translateY(-5px);
+    color: white;
+}
+
+form {
+    margin: 0 auto 20px;
+    width: 675px;
+    padding: 20px;
+    background-color: rgba(38, 36, 36, 0.721);  
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px grey;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: left;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+#name {
+    width: 100%; 
+    border-radius: 5px; 
+    border: 2px solid grey; 
+    height: 30px;
+    
+}
+
+/* made the ingredients and instructions text areas so there was multiple lines of rows for text */
+textarea {
+    width: 100%; 
+    border-radius: 5px; 
+    border: 2px solid grey; 
+    color:#f4b794ea;
+    font-size: 16px;
+}
+
+/* using the placeholder selector to change font inside the form for name */
+::placeholder {
+    color:#f4b794ea;
+    font-size: 16px;
+}
